@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SE&M Quantum Initiative</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0;
+               background: url('/static/SE%26M%20Logo.jpg') no-repeat center center fixed;
+               background-size: cover; color: #fff; display: flex; justify-content: center;
+               align-items: center; height: 100vh; }
+        .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                   background-color: rgba(0, 0, 0, 0.6); z-index: -1; }
+        .container { text-align: center; padding: 20px 40px; border-radius: 10px;
+                     background: rgba(0, 0, 0, 0.75);
+                     border: 2px solid rgba(255, 255, 255, 0.2);
+                     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+                     position: relative; }
+        h1 { color: #fff; margin-bottom: 20px; }
+        input[type="text"] { padding: 10px; margin-bottom: 20px; border: 1px solid #ccc;
+                             border-radius: 5px; width: 80%; }
+        button { padding: 10px 20px; border: none; border-radius: 5px;
+                 background: #007bff; color: #fff; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .qrng-badge {
+            font-size: 0.8em; opacity: 0.7;
+            position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Register - SE&M Quantum Initiative</h1>
+        <form method="POST">
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="qrng-badge">🔒 Powered by QRNG</div>
+    </div>
+</body>
+</html>

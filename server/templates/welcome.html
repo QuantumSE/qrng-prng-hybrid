@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - SE&M Quantum Initiative</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; margin: 0; padding: 0;
+            background: url('/static/SE%26M%20Logo.jpg') no-repeat center center fixed;
+            background-size: cover; color: #fff; display: flex;
+            justify-content: center; align-items: center; height: 100vh;
+        }
+        .overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); z-index: -1;
+        }
+        .container {
+            text-align: center; padding: 30px 50px; border-radius: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            position: relative;
+            max-width: 500px;
+        }
+        .checkmark {
+            font-size: 60px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+        .logout {
+            background: #dc3545;
+            margin-left: 10px;
+        }
+        .logout:hover {
+            background: #b52a37;
+        }
+        .qrng-badge {
+            font-size: 0.8em; opacity: 0.7;
+            position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="checkmark">✔</div>
+        <h1>Welcome, {{ username }}!</h1>
+        <p>You have successfully signed in using your quantum-rooted passkey.</p>
+        <a href="/">Go to Home</a>
+        <a href="/logout" class="logout">Log Out</a>
+        <div class="qrng-badge">🔒 Powered by QRNG</div>
+    </div>
+</body>
+</html>
