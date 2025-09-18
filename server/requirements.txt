@@ -1,5 +1,6 @@
-flask
-cryptography
-grpcio==1.62.2
-uqrng_direct
-gunicorn
+flask==3.0.3
+cryptography==42.0.8
+gunicorn==21.2.0
+# optional if your QRNG lib works on your host:
+# uqrng_direct
+# grpcio==1.62.2
