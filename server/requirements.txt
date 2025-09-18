@@ -1,0 +1,4 @@
+flask
+cryptography
+uqrng_direct
+gunicorn
