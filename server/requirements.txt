@@ -1,4 +1,5 @@
 flask
 cryptography
+grpcio==1.62.2
 uqrng_direct
 gunicorn
